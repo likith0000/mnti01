@@ -1,0 +1,37 @@
+from numpy import array
+from numpy import tensordot
+a=array([
+    [[1,2,3],[4,5,6],[7,8,9]],
+    [[11,12,13],[14,15,16],[17,18,19]],
+    [[21,22,23],[24,25,26],[27,28,29]],
+])
+print(a.shape)
+print("the array of a:",a)
+b=array([
+    [[1,2,3],[4,5,6],[7,8,9]],
+    [[11,12,13],[14,15,16],[17,18,19]],
+    [[21,22,23],[24,25,26],[27,28,29]],
+])
+print(b.shape)
+print("the array of b:",b)
+print("tensor addition")
+c=a+b
+print("the addition of matrix:",c)
+print(c.shape)
+print("tensor subtraction")
+s=a-b
+print(s.shape)
+print("the difference of matrix:",s)
+print("tensor multiplication")
+m=a*b
+print(m.shape)
+print("the product of matrix:",m)
+print("tensor division")
+DI=a/b
+print(DI.shape)
+print("the quition of matrix:",DI)
+d=array([[1,2]])
+e=array([[3,4]])
+f=tensordot(d,e,axes=0)
+print("result wen axes=0",f)
+
