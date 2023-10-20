@@ -1,0 +1,20 @@
+import numpy as np
+a=array([[1,2,3],[4,5,6],[7,8,9]])
+print("the array of a:",a)
+print("the square of a:",a**2)
+print("the cube of a:",a**3)
+b=array([[1,2,3],[4,5,6],[7,8,9]])
+print("the array of b:",b)
+print("the addition starts from here..")
+c=a+b
+print("the sum od a&b is:",c)
+print("the multiplication starts from here..")
+sca_m=a*b
+print("the product of a&b is:",sca_m)
+print("the sum of matrix a:",np.sum(a))
+print("the average of matrix a:",np.mean(a))
+print("the standard deviation of matrix a:",np.std(a))
+print("the varience of matrix a:",np.var(a))
+print("the minimum value of matrix a:",np.min(a))
+print("the maximum value of matrix a:",np.max(a))
+print("return type",type(a))
