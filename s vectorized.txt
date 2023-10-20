@@ -1,0 +1,33 @@
+A=np.array([[0,1,2],[3,4,5],[6,7,8]])
+print("\n The matrix A is\n",A)
+print("\n The square of matrix A is\n",A**2)
+print("\n The cube of matrix A is\n",A**3)
+sqrt_A=np.sqrt(A)
+print("\n The square of element of A is\n",sqrt_A)
+
+B=np.array([[0,1,2],
+           [3,4,5],
+           [6,7,8]])
+print("\n The matrix B is \n",B)
+print("\n The sum starts from here...\n")
+C=A+B
+print("\n The sum of A$B is\n",C)
+print("\n The sum of A$B is\n",np.add(A,B))
+print("\n The manipulation begins from here...\n")
+sca_M=A*B
+print("\n The product of A$B is\n",sca_M)
+print("\n The sum of elements of Matrix A is=",np.sum(A))
+print("\n The average of elements of Matrix A=",np.mean(A))
+print("\n The standard deviation of Matrix A=",np.std(A))
+print("\n The variance of elements of Matrix A=",np.var(A))
+print("\n The maximun of elements of Matrix A=",np.max(A))
+print("\n The minimum of elements of Matrix A=",np.min(A))
+print("\n The maximum of elements of Matrix A=",np.max(A,axis=0))
+print("\n The minimum of elements of Matrix A=",np.min(A,axis=1))
+print("\n The order of the matrix A\n",A.shape)
+print("\n The number of elements of the matrix A\n",A.size)
+print("\n return class type\n",type(A))
+print("\n returns \n",A[0,1:])
+print("\n returns \n",A[:2,:2])
+print("\n returns \n",A[2:,2:])
+print("\n returns \n",A[1:3,1:2])
